@@ -1,0 +1,48 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Redirect to non-www url
+    RewriteCond %{HTTP_HOST} ^www.shuttlebug.co.za [NC]
+    RewriteRule ^(.*)$ https://shuttlebug.co.za/$1 [L,R=301]
+
+    # Redirect to https
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType video/mp4                     "access 3 months"
+    ExpiresByType image/jpg                     "access 3 months"
+    ExpiresByType image/jpeg                    "access 3 months"
+    ExpiresByType image/gif                     "access 3 months"
+    ExpiresByType image/png                     "access 3 months"
+    ExpiresByType image/x-icon                  "access 3 months"
+    ExpiresByType text/css                      "access 3 months"
+    ExpiresByType text/x-javascript             "access 3 months"
+    ExpiresByType application/javascript        "access 3 months"
+    ExpiresByType application/x-javascript      "access 3 months"
+    ExpiresByType application/x-font-ttf        "access 1 year"
+    ExpiresByType application/x-font-opentype   "access 1 year"
+    ExpiresByType application/x-font-woff       "access 1 year"
+    ExpiresDefault                              "access 5 minute"
+</IfModule>

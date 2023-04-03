@@ -1,0 +1,324 @@
+/* brand */
+
+/*.turquoise { color: #0f859c; }*/
+.dark-blue { color: #1a3e6d; }
+.light-blue { color: #6fb3f3; }
+.dk-grey { color: #b8c4cb; }
+.lt-grey { color: #eff1f2; }
+.slate-gry { color: #424f5a; }
+.text-primary { color: #6fb3f3 !important; }
+.text-warning { color: #c27a08 !important; }
+
+body { padding-top: 50px; font-size: 15px; }
+
+/* nav */
+#navmenu { margin-left: 70px; }
+.navbar, .sidebar { background-color: #1a3e6d; }
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 85px 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    width: 180px;
+}
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link, .sidebar .nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar-nav .nav-link, .sidebar .nav-link, .sidebar p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-nav .nav-link:hover, .sidebar .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+    border-bottom: 2px solid #6fb3f3;
+    padding-bottom: 3px;
+}
+
+.btn-link.active h6 {
+    border-bottom: 2px solid #6fb3f3;
+    padding-bottom: 2px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+    background-color: transparent;
+    color: #fff;
+    cursor: default;
+    border-left: 3px solid #6fb3f3;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.navbar-nav .dropdown-menu {
+    background-color: #1a3e6d;
+    margin: .7rem 0 0;
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* buttons */
+.btn-primary {
+    background-color: #1a3e6d;
+    border-color: #1a3e6d;
+}
+
+.btn-primary:hover, .btn-outline-dark:hover {
+    color: #6fb3f3;
+    background-color: #1a3e6d;
+    border-color: #1a3e6d;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #c27a08;
+    border-color: #c27a08;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #9b6d24;
+    border-color: #9b6d24;
+}
+
+/* other */
+#ajaxloader {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    width: 50px;
+    height: 50px;
+    background: url(/images/ajax-loader.gif) no-repeat center center transparent;
+}
+
+a, a:hover {
+    color: #0f859c;
+}
+
+.breadcrumb { background-color: transparent; }
+
+.content {
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-left: 205px;
+}
+
+hr { border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+.alert-temp {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.toolbar {
+    padding: 0.25rem 0.75rem;
+    margin: 0 0 1.5rem 0;
+    background-color: rgba(66,79,90,0.1);
+}
+
+.white { color: #fff; }
+
+.limcounter, .narrcounter { font-size: 80%; color: #868e96; }
+
+/* forms */
+.form-control { font-size: 15px; }
+
+.form-control::placeholder {
+    color: #000;
+    opacity: .3;
+}
+
+.w28 {
+    min-width: 28% !important;
+    max-width: 28% !important;
+    width: 28% !important;
+}
+
+.w25 {
+    min-width: 25% !important;
+    max-width: 25% !important;
+    width: 25% !important;
+}
+
+.input-group-addon { background-color: #fff; }
+
+.custom-select { padding: 0.25rem 0.5rem; min-width: 120px; }     /*b4 fix*/
+
+/* bootstrap table */
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #dbe8f7;
+}
+
+/* dataTable */
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc {
+    background-image: none !important;
+}
+
+table.dataTable.display tbody > tr.selected { background-color: #dbe8f7 !important; border-color: #dbe8f7 !important; }
+
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: #dbe8f7;
+}
+
+/* timepicker */
+.ui-timepicker-wrapper {
+    margin-top: 5px !important;
+}
+
+/* datepicker */
+.datepicker-dropdown { z-index: 1050 !important; }
+.mask-cal-dates { background: #e3e3e3; }
+
+/* custom radio & checkbox */
+.control-group {
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*background: #fff;*/
+    /*text-align: left;*/
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.1);*/
+    /*padding: 30px;*/
+    /*width: 200px;*/
+    /*height: 210px;*/
+    /*margin: 10px;*/
+}
+
+.control {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #d9d9d9;
+}
+
+.control-radio .control_indicator {
+    border-radius: 50%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    border-color: #0f859c;
+}
+
+.control input:checked ~ .control_indicator {
+    /*background: #2aa1c0;*/
+    /*border: 1px solid #d9d9d9;*/
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    /*background: #0e647d;*/
+}
+
+.control input:disabled ~ .control_indicator {
+    /*background: #e6e6e6;*/
+    border-color: #d9d9d9;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control_indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control-checkbox-danger .control_indicator:after {
+    left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid #ff1a02;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+.control-radio .control_indicator:after {
+    left: 4px;
+    top: 4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #666;
+}
+
+.control-radio input:disabled ~ .control_indicator:after {
+    background: #7b7b7b;
+}
+
+label { font-weight: normal; /*line-height: 1.8;*/ }
+
+@media (max-width: 1000px) {
+    .sidebar { width: 130px; }
+    .content { margin-left: 160px; }
+}
+
+@media (max-width: 767px) {
+    #navmenu { margin-left: 0; }
+    .content { margin-left: 0; }
+}

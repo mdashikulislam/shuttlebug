@@ -1,0 +1,49 @@
+[02-Jul-2018 07:44:39 Europe/Berlin] PHP Warning:  Uncaught ErrorException: require(/home/hywgztzy/laravel/vendor/composer/../../app/Http/helpers.php): failed to open stream: No such file or directory in /home/hywgztzy/laravel/vendor/composer/autoload_real.php:66
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/composer/autoload_real.php(66): Composer\Util\ErrorHandler::handle(2, 'require(/home/h...', '/home/hywgztzy/...', 66, Array)
+#1 /home/hywgztzy/laravel/vendor/composer/autoload_real.php(66): require()
+#2 /home/hywgztzy/laravel/vendor/composer/autoload_real.php(56): composerRequire80275d8b757bf6216579e393cb4113c6('6d394c3a532652d...', '/home/hywgztzy/...')
+#3 /home/hywgztzy/laravel/vendor/autoload.php(7): ComposerAutoloaderInit80275d8b757bf6216579e393cb4113c6::getLoader()
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/ComposerScripts.php(43): require_once('/home/hywgztzy/...')
+#5 phar:///home/hywgztzy/composer/composer/src/Composer/EventDispatcher/EventDispatcher.php(292): Illuminate\Foundation\ComposerScripts::postAutoloadDump in /home/hywgztzy/laravel/vendor/composer/autoload_real.php on line 66
+[02-Jul-2018 07:44:39 Europe/Berlin] PHP Fatal error:  composerRequire80275d8b757bf6216579e393cb4113c6(): Failed opening required '/home/hywgztzy/laravel/vendor/composer/../../app/Http/helpers.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/hywgztzy/laravel/vendor/composer/autoload_real.php on line 66
+[08-Jun-2020 10:46:20 Africa/Johannesburg] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/hywgztzy/laravel/app/Exceptions/Handler.php on line 37
+[08-Jun-2020 10:46:20 Africa/Johannesburg] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:805
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(687): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(801): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Found in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 807
+[08-Jun-2020 10:55:42 Africa/Johannesburg] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/hywgztzy/laravel/app/Exceptions/Handler.php on line 37
+[08-Jun-2020 10:55:42 Africa/Johannesburg] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:805
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(687): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(801): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Found in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 807
+[08-Jun-2020 10:57:17 Africa/Johannesburg] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/hywgztzy/laravel/app/Exceptions/Handler.php on line 37
+[08-Jun-2020 10:57:17 Africa/Johannesburg] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:805
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(687): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(801): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Found in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 807
+[08-Jun-2020 11:17:31 Africa/Johannesburg] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/hywgztzy/laravel/app/Exceptions/Handler.php on line 37
+[08-Jun-2020 11:17:31 Africa/Johannesburg] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:805
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(687): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(801): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Found in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 807
+[08-Jun-2020 11:23:51 Africa/Johannesburg] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/hywgztzy/laravel/app/Exceptions/Handler.php on line 37
+[08-Jun-2020 11:23:51 Africa/Johannesburg] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:805
+Stack trace:
+#0 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(687): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(801): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Found in /home/hywgztzy/laravel/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 807
